@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAeFBMVEWXWhdHcEx9TBI5MBu1XxuYYiK+ZBvKcyLGdyHpgyPxiyb0kyfmiCfLeyXegCP8kyj1kyjviSXnhSVALxLxiCXJdCQeKBTskCn6jSXlgCPQciHyhyQ8KQ4AAAAAABD+mSnsgySzciL5jCa4ax/rgSPdgCX0iyanaRpYyeWHAAAAKHRSTlM8ADIECRYsSo7f9NSLV7z//rltIeV4C6b/05T/LBVB//5J6GrCfvtnjd1Y2AAAAKBJREFUeAHVUjUWwzAMtcLMzOb737BLuVbmRpue8AMhgIZF4CSuUbQd1yOusej6QRjFiWcoOmmWF2VVm9a6SZQ3bWe8affFMPrIQ1M+j+TtW7te1ke27UdD4b2YxvveTMQB6Ngc8S+cNs1YvpcUeD6X9i8JVBxDU4mDLSaGXNnM6hgmhL40nI+8Rop22gwZTnyba7zYlR5eBNf5Aw+dVJcbUwYK5uv5IWgAAAAASUVORK5CYII=">
+    <title>About Us</title>
+</head>
+<div class="loading"></div>
+<div class="bg-loading"></div>
+<body>
+    <header>
+        <nav>
+            <div class="header-logo">
+                <a href="page1.html"><img src="https://www.longbeachsyrup.com/images/logo%20longbeach-08.png?crc=377204701" alt=""></a>
+            </div>
+            <div class="menu">
+                    <a href="about-us.html"><img src="https://www.longbeachsyrup.com/images/u1216568_states.png?crc=29896124" alt="About Us เกี่ยวกับเรา"></a>
+                    <a href="product.html"><img src="https://www.longbeachsyrup.com/images/u1170150_states.png?crc=4089848308" alt=""></a>
+                    <a href="#"><img src="https://www.longbeachsyrup.com/images/u1170151_states.png?crc=109161099" alt=""></a>
+                    <a href="#"><img src="https://www.longbeachsyrup.com/images/u1170152_states.png?crc=62384331" alt=""></a>
+                    <a href="#"><img src="https://www.longbeachsyrup.com/images/u1170153_states.png?crc=3916408707" alt=""></a>
+                    <a href="#"><img src="https://www.longbeachsyrup.com/images/u1170154_states.png?crc=3917797421" alt=""></a>
+                    <a href="#"><img src="https://www.longbeachsyrup.com/images/u1170155_states.png?crc=4062943233" alt=""></a>
+                </div>
+            </nav>
+            <div class="about-content">
+                <div class="main-content-about">
+                    <a href=""><img src="https://www.longbeachsyrup.com/images/u1283656-6.png?crc=3807001499" alt=""></a>
+                    <div class="body-content-about">
+                        <a href=""><img src="https://www.longbeachsyrup.com/images/u1250385.png?crc=3837707262" alt="" ></a>
+                    </div>
+                    <div class="img-content-about">
+                        <div class="img-one">
+                            <a href=""><img src="https://www.longbeachsyrup.com/images/company1200600.jpg?crc=4005699569" alt="" width="350px" height="220px"></a>
+                            <a href=""><img src="https://www.longbeachsyrup.com/images/img_8868.jpg?crc=10616222" alt=""></a>
+                    </div>
+                        <div class="img-two">
+                            <a href=""><img src="https://www.longbeachsyrup.com/images/img_8789-crop-u1276394.jpg?crc=429556851" alt="" width="130px" height="190px"></a>
+                            <a href=""><img src="https://www.longbeachsyrup.com/images/img_8806.jpg?crc=472114220" alt="" height="190px" width="250px"></a>
+                            <a href=""><img src="https://www.longbeachsyrup.com/images/img_8896.jpg?crc=4031583148" alt="" width="253px" height="189px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <script>
+        $(window).on('load',function(){
+            $(".loading").fadeOut(2000);
+            $("header").fadeIn(2000);
+            $(".bg-loading").fadeOut(100);
+            $("header").fadeIn(100);
+        })
+        $(".menu img").on("click", function() {
+        $(".menu img").removeClass("active");
+        $(this).addClass("active");
+        });
+    </script>
+</body>
+</html>

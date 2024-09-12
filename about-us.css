@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(255, 244, 223);
+    height: 200vh;
+    width: 0;
+}
+.bg-loading{
+    background-color: #F26923;
+    width: 225vh;
+    height: 200vh;
+    position: absolute;
+}
+.loading{
+    height: 100px;
+    position: absolute;
+    width: 100px;
+    border: 15px solid #F26923;
+    border-top-color:#ffffff;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 40rem;
+    border-radius: 50px;
+    animation: spin 1.5s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(800deg);
+    }
+}
+
+nav{
+    background-color: #F26923;
+    align-items: center;
+    position: fixed;
+    height: 90px;
+    z-index: 1000;
+    width: 100%;
+}
+header{
+    display: none;
+}
+.header-logo img{
+    position: fixed;
+    padding-left: 230px;
+    justify-content: center;
+    width: 400px;
+    padding-top: 10px;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end; 
+    padding-right: 250px;
+    list-style: none;
+    text-align: center;
+}
+.menu img:active{
+    background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 5px;
+}
+/* .menu img:hover{
+    background-color: rgba(0, 0, 0, 0.164);
+    background-clip: border-box;
+    transform: scale(1.1);
+    transition: 0.30s ease-in-out;
+    border-radius: 5px;
+} */
+.Image{
+    position: relative;
+    position: absolute;
+    background-image: url(https://www.longbeachsyrup.com/images/_head1.jpg?crc=3804342330);
+    top: 5.5rem;
+    width: 900px;
+    height: 900px;
+    overflow: hidden;
+    left: 250px;
+    background-repeat: no-repeat;
+}
+.slide2{
+    position: absolute;
+    width: 900px;
+    height: 900px;
+    background-image: url(https://www.longbeachsyrup.com/images/_head3.jpg?crc=3995169363);
+    top: 0.1rem;
+    animation: slide 20s infinite;
+    transform: translate(900px);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.slide3{
+    position: absolute;
+    background-image: url(https://www.longbeachsyrup.com/images/_head2.jpg?crc=4075138205);
+    width: 900px;
+    height: 900px;
+    top: 0.1rem;
+    overflow: hidden;
+    animation: slide 25s infinite;
+    transform: translate(900px);
+    background-repeat: no-repeat;
+}
+.Image{
+    animation-delay: 3s;
+}
+.slide2{
+    animation-delay: 1s;
+}
+.slide3{
+    animation-delay: 5s;
+    z-index: 4;
+}
+
+@keyframes slide{
+    3%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(0px);
+    }
+    28%{
+        transform: translateX(-900px);
+    }
+    100%{
+        transform: translateX(-900px);
+    }
+}
+.title{
+    padding-top: 500px;
+    align-items: center;
+    padding-left: 250px;
+}
+.Image-post{
+    padding-left: 10px;
+}
+.Image-btn{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: absolute;
+    width: 250px;
+    height: 300px;
+    top: 40rem;
+    left: 260px;
+    gap: 25px;
+    z-index: 99;
+}
+.Image-post a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+.Image-post img:hover{
+    transform: scale(1.05);
+    transition: all 0.30s linear;
+}
+.Image-main{
+    background-color: rgba(241, 226, 195, 0.774);
+    border-radius: 15px;
+    width: 260px;
+}
+.content-body{
+    position: absolute;
+    padding-top: 68rem;
+    left: 15rem;
+}
+.content-body1{
+    padding-top: 75rem;
+    position: absolute;
+    left: 15rem;
+}
+.img2 img{
+    margin-left: 280px;
+    position: absolute;
+    top: 1200px;
+    border-radius: 15px;
+}
+.content-body-img{
+    border-radius: 5px;
+    top: 100rem;
+    left: 15rem;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 0;
+}
+.content-body-img{
+    gap: 25px;
+    display: flex;
+}
+.content-body-img img {
+    border-radius: 10px;
+}
+.content-body-2{
+    position: absolute;
+    top: 158rem;
+    width: 0;
+    left: 15rem;
+
+}
+.content-body-img02{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    top: 30rem;
+    gap: 25px;
+    text-align: center;
+    border-radius: 15px;
+}
+.content-footer{
+     background-color: rgba(241, 226, 195, 0.774);
+     border-radius: 15px;
+     width: 270px;
+}
+.content-body-img03 img:hover{
+    transform: scale(1.05);
+    transition: all 0.30s linear;
+
+}
+.about-content{
+    display: block;
+    position: absolute;
+    top: 10rem;
+    left: 17rem;
+}
+.body-content-about img{
+    top: 8rem;
+    position: absolute;
+    left: 3rem;
+}
+.img-content-about{
+    display: block;
+    position: absolute;
+    top: 23rem;
+}
+.img-one{
+    left: 6rem;
+    top: -1rem;
+    position: absolute;
+    display: flex;
+    gap: 5px;
+}
+.img-two{
+    display: flex;
+    position: absolute;
+    top: 13rem;
+    gap: 5px;
+    left: 6rem;
+}
